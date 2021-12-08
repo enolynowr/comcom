@@ -51,13 +51,16 @@ class WebHomeView extends StatelessWidget {
 
   Scaffold webSp() {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Comcom'),
-      ),
-      body: const Center(
-        child: Text('SP'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Comcom'),
+        ),
+        body: Column(
+          children: [
+            Image.asset(
+              'images/comcom_phil.png',
+            ),
+          ],
+        ));
   }
 }
 
